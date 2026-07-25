@@ -1,0 +1,60 @@
+site_name: Build a Matching Game in Godot
+site_description: A beginner course in Godot 4, built around one small game you finish and keep.
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - content.code.copy
+    - toc.follow
+
+plugins:
+  - search
+  - mkdocs_quiz:
+      auto_submit: true
+      show_correct: true
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - footnotes
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.keys
+
+nav:
+  - Start here: index.md
+  - 1. Scenes and nodes: 01-scenes-and-nodes.md
+  - 2. Building a card: 02-building-a-card.md
+  - 3. Your first script: 03-your-first-script.md
+  - 4. Signals: 04-signals.md
+  - 5. Building the board: 05-building-the-board.md
+  - 6. The rules of the game: 06-the-rules.md
+  - 7. Loading decks from CSV: 07-loading-decks-from-csv.md
+  - 8. Make it yours: 08-make-it-yours.md
+  - For teachers:
+      - Video scripts: videos.md

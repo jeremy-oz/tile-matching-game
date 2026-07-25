@@ -1,0 +1,17 @@
+pair,text,image
+sun,sol,res://art/sun.svg
+sun,sun,
+moon,luna,res://art/moon.svg
+moon,moon,
+tree,arbol,res://art/tree.svg
+tree,tree,
+house,casa,res://art/house.svg
+house,house,
+star,estrella,res://art/star.svg
+star,star,
+drop,gota,res://art/drop.svg
+drop,drop,
+leaf,hoja,res://art/leaf.svg
+leaf,leaf,
+heart,corazon,res://art/heart.svg
+heart,heart,
