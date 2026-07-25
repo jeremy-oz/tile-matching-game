@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://kudwjf11wjh7"]
 
 [ext_resource type="Texture2D" uid="uid://b3mft7vfmhvfp" path="res://vector_style5.png" id="1_j5hw3"]
-[ext_resource type="Script" path="res://tile_map.gd" id="2_b4wmi"]
+[ext_resource type="Script" uid="uid://boeuce7hm00br" path="res://tile_map.gd" id="2_b4wmi"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_u4r8o"]
 texture = ExtResource("1_j5hw3")
@@ -45,15 +45,12 @@ texture_region_size = Vector2i(32, 30)
 tile_size = Vector2i(32, 30)
 sources/0 = SubResource("TileSetAtlasSource_u4r8o")
 
-[node name="TileMap" type="TileMap"]
-tile_set = SubResource("TileSet_tdcw1")
-format = 2
-layer_0/name = "hidden"
-layer_1/name = "revealed"
-layer_1/enabled = true
-layer_1/modulate = Color(1, 1, 1, 1)
-layer_1/y_sort_enabled = false
-layer_1/y_sort_origin = 0
-layer_1/z_index = 0
-layer_1/tile_data = PackedInt32Array()
+[node name="TileMap" type="Node2D"]
 script = ExtResource("2_b4wmi")
+
+[node name="revealed" type="TileMapLayer" parent="."]
+tile_set = SubResource("TileSet_tdcw1")
+
+[node name="hidden" type="TileMapLayer" parent="."]
+z_index = 5
+tile_set = SubResource("TileSet_tdcw1")

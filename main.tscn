@@ -10,7 +10,6 @@ position = Vector2(573, 324)
 [node name="TileMap" parent="." instance=ExtResource("1_sotei")]
 position = Vector2(80, 62)
 scale = Vector2(4.4, 4.4)
-layer_0/z_index = 5
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
