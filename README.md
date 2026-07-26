@@ -36,7 +36,7 @@ least that many pairs.
 > [!IMPORTANT]
 > Godot treats `.csv` files as translation files by default. After adding a new
 > deck, select it in the FileSystem panel, open the **Import** tab, set
-> **Import As** to **Keep File (No Import)** and click **Reimport**. Skipping
+> **Import As** to **Keep File (exported as is)** and click **Reimport**. Skipping
 > this can break deck loading in exported builds.
 
 Bundled decks: `spanish.csv`, `times-tables.csv`, `pictures.csv`.
@@ -58,16 +58,22 @@ ends with a working game and a few quiz questions.
 | 8 | Make it yours | `@export`, extension exercises |
 
 `docs/videos.md` has recording scripts for a short companion video per chapter,
-with shot lists and timings.
+with shot lists and timings. The videos have not been made yet.
 
-### Building the course site
+### The published course
 
-```bash
-pip install -r requirements.txt
-mkdocs serve
+The course is maintained and published from the **godot-edu** repo:
+
+```
+~/jeremy-oz/eduspace/godot-edu/tile-matching-game/
 ```
 
-Quizzes are rendered by [mkdocs-quiz](https://github.com/jeremy-oz/mkdocs-quiz).
+→ `lessons.eduspace.cc/ac/tile-matching-game/`
+
+Treat that copy as canonical for the prose; keep this project's code in step
+with its chapter listings.
+
+Quizzes are rendered by [mkdocs-quiz](https://github.com/ewels/mkdocs-quiz).
 
 ## Project layout
 
@@ -85,8 +91,13 @@ docs/                the course
 
 ## Credit
 
-Originally based on
+The idea of teaching Godot through a tile-matching game came from
 [GodotTileMatchingGameExample](https://github.com/Goldenlion5648/GodotTileMatchingGameExample)
-by Goldenlion5648 / ThinkWithGames, MIT licensed — see `LICENSE`. The game has
-since been rewritten on Control nodes with CSV-driven decks, and the course
-added.
+by Goldenlion5648 / ThinkWithGames.
+
+**None of that project's code is used here.** It builds the board from a
+`TileMap` with atlas coordinates in a single script; this is an independent
+rewrite on `Control` nodes — one scene per card, signals, and CSV-driven decks.
+The acknowledgement is for the idea, not for code.
+
+Game code MIT, course prose CC BY 4.0 — see `LICENSE`.

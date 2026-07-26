@@ -1,6 +1,15 @@
-MIT License
+Matching Game — a beginner Godot course
+=======================================
 
-Copyright (c) 2023 Goldenlion5648/ThinkWithGames
+Two licences apply, because prose and software want different things.
+
+
+GAME SOURCE CODE  (scripts/, scenes/, decks/, art/, *.tscn, project.godot)
+---------------------------------------------------------------------------
+
+Copyright (c) 2026 Jeremy Chen
+
+MIT Licence.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +28,40 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+
+DOCUMENTATION  (README.md)
+---------------------------
+
+Copyright (c) 2026 Jeremy Chen
+
+Licensed under the Creative Commons Attribution 4.0 International Licence
+(CC BY 4.0). Creative Commons licences are not intended for software, which is
+why the code above is MIT instead.
+
+Full licence text: https://creativecommons.org/licenses/by/4.0/legalcode
+Summary:           https://creativecommons.org/licenses/by/4.0/
+
+Suggested attribution:
+  "Build a Matching Game in Godot" by Jeremy Chen,
+  CC BY 4.0.
+
+
+ACKNOWLEDGEMENT
+---------------
+
+The idea of teaching Godot through a tile-matching game came from
+GodotTileMatchingGameExample by Goldenlion5648 / ThinkWithGames
+(https://github.com/Goldenlion5648/GodotTileMatchingGameExample), MIT licensed.
+
+None of that project's code is used here. It builds the board from a TileMap
+with atlas coordinates in a single script; this project is an independent
+rewrite on Control nodes, with one scene per card, signals, and CSV-driven
+decks. The acknowledgement is for the idea, not for code.
+
+
+THIRD-PARTY
+-----------
+
+Godot Engine is © Juan Linietsky, Ariel Manzur and the Godot Engine community,
+MIT licensed — https://godotengine.org/license/
