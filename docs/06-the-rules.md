@@ -107,6 +107,9 @@ why. `push_error()` writes a red message to the Output panel.
 
 ## The turn
 
+![The running game with two cards turned face up](images/06-two-cards-up.png)
+<!-- SCREENSHOT: Play the game, click two cards, capture while both are visible. -->
+
 This is the heart of the game.
 
 ```gdscript
@@ -209,6 +212,9 @@ func update_labels() -> void:
 any value.
 
 ## Play it
+
+![The running game showing a matched pair in green and the score at 1](images/06-matched-pair.png)
+<!-- SCREENSHOT: After a successful match. Both matched cards green, Score: 1 in the side panel. -->
 
 Press ++f5++. You should get a full board of face-down blue cards. Click two.
 They turn over. Matching pairs stay up and go green; the rest flip back after a

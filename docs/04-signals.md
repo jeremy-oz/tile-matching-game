@@ -37,6 +37,9 @@ clicked" and have no idea which one.
 
 ## Emit it when clicked
 
+![The Node dock Signals tab showing the Button pressed signal](images/04-signals-dock.png)
+<!-- SCREENSHOT: Select Card, open the Node dock (next to Inspector), Signals tab. Show BaseButton > pressed. -->
+
 `Button` already has a built-in signal called `pressed`. We listen to that, and
 turn it into our own signal. Add to `_ready()`:
 
@@ -77,6 +80,9 @@ Three things worth noticing:
     what makes the code easy to change later.
 
 ## Test it
+
+![The Output panel showing the printed click messages](images/04-output-print.png)
+<!-- SCREENSHOT: After pressing F6 and clicking the card a few times. Crop to the Output panel showing 'clicked:' lines. -->
 
 Add a temporary line to prove the signal fires:
 

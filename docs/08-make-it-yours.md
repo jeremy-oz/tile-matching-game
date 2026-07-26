@@ -5,6 +5,9 @@ and some ideas for where to take it next.
 
 ## Change the board size
 
+![The Inspector showing the Rows and Columns properties on the Game node](images/08-rows-columns.png)
+<!-- SCREENSHOT: Select Game. Show Rows and Columns, ideally set to something other than 4x4. -->
+
 You already exported `rows` and `columns` back in Chapter 6. Select the `Game`
 node and change them in the Inspector — no code, no restart of Godot.
 
@@ -21,6 +24,9 @@ that many pairs. The code checks both and tells you in the Output panel if
 something is wrong — try setting a 3 × 3 board and read the error.
 
 ## Add pictures
+
+![The running game using the picture deck, showing cards with images and words](images/08-picture-cards.png)
+<!-- SCREENSHOT: Run with decks/pictures.csv. Capture with several cards face up so pictures and words are both visible. -->
 
 Put an image in an `art/` folder — SVG or PNG both work — then reference it in
 the `image` column:
@@ -51,6 +57,9 @@ star,estrella,
     easier and looks better anyway.
 
 ## Write your own deck
+
+![A custom deck open in a spreadsheet next to the game running with it](images/08-own-deck.png)
+<!-- SCREENSHOT: Any subject deck - times tables works well. Spreadsheet on one side, running game on the other. -->
 
 This is the real point of the whole course. Open a spreadsheet, make three
 columns headed `pair`, `text`, `image`, and fill it in. Save as CSV into

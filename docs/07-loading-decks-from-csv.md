@@ -33,6 +33,9 @@ Chapter 3.
 
 ## Make a deck file
 
+![The deck open in a spreadsheet showing the pair, text and image columns](images/07-spreadsheet.png)
+<!-- SCREENSHOT: Excel, Numbers or Google Sheets with spanish.csv open. Show the header row and a few pairs. -->
+
 Create a folder `decks/` and a file `decks/spanish.csv`:
 
 ```csv
@@ -70,6 +73,9 @@ Eight pairs, which is exactly what a 4×4 board needs.
     breaks in an exported game, this is almost always why.
 
 ## The Deck script
+
+![The Import tab with Import As set to Keep File (No Import)](images/07-import-keep-file.png)
+<!-- SCREENSHOT: IMPORTANT SHOT. Select decks/spanish.csv in FileSystem, open the Import tab, show 'Keep File (No Import)' and the Reimport button. -->
 
 Create `scripts/deck.gd`. This one is not attached to any node — it is a
 toolbox of functions.
@@ -219,6 +225,9 @@ is what we actually got. If the deck is too small, the board is smaller than
 asked for — and the win check still works because it uses the real number.
 
 ## Try it
+
+![The Inspector showing the Deck Path property with a file picker](images/07-deck-path.png)
+<!-- SCREENSHOT: Select the Game node, show the Deck Path export pointing at res://decks/spanish.csv. -->
 
 Run the game. It should look the same but now be reading from your file.
 

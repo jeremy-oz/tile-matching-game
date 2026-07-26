@@ -5,6 +5,9 @@ face up and face down.
 
 ## Attach a script
 
+![The Attach Node Script dialog with the path set and Empty template chosen](images/03-attach-script.png)
+<!-- SCREENSHOT: Show Path as res://scripts/card.gd and Template as Empty. -->
+
 Open `scenes/card.tscn`. Select the `Card` node, and click the **Attach Script**
 icon above the Scene panel (a scroll with a `+`).
 
@@ -62,6 +65,9 @@ in Chapter 7.
     because it catches mistakes early.
 
 ## Reaching the child nodes
+
+![The Scene panel next to the script editor showing the node path being typed](images/03-node-paths.png)
+<!-- SCREENSHOT: Split view: Scene dock on the left showing Face/Word, script editor with $Face/Word on the right. -->
 
 Our script is on the `Card` node, but the text lives on the `Word` node
 underneath it. We need a way to reach it:
@@ -151,6 +157,9 @@ responding to clicks, and Godot draws it differently so the player can see it is
 done. We got that for free by choosing `Button` in Chapter 2.
 
 ## The whole file
+
+![The script editor showing the finished card.gd](images/03-script-editor.png)
+<!-- SCREENSHOT: Full script editor pane with card.gd complete and no error markers in the gutter. -->
 
 Your `scripts/card.gd` should now look like this:
 

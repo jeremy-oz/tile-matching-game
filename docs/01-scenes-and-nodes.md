@@ -5,6 +5,9 @@ everything else in Godot is built on.
 
 ## Make the project
 
+![The Godot project manager with the new project dialog open](images/01-new-project.png)
+<!-- SCREENSHOT: Project Manager > Create. Show Project Name 'matching-game' filled in and Renderer set to Compatibility. -->
+
 Open Godot and click **Create** (or **New Project**).
 
 - **Project Name:** `matching-game`
@@ -40,6 +43,9 @@ Change the Card scene, and all 16 change. You will do exactly this in Chapter 5.
 
 ## Build the root node
 
+![The Scene panel showing the Create Root Node shortcuts with Other Node at the bottom](images/01-create-root-node.png)
+<!-- SCREENSHOT: Empty project, Scene dock only. Highlight the 'Other Node' button. -->
+
 Look at the **Scene** panel in the top left. It says *Create Root Node* with a
 few shortcuts. Ignore those and click **Other Node**.
 
@@ -53,6 +59,9 @@ Now rename it. Double-click the node's name in the Scene panel and call it
 `Game`.
 
 ### Make it fill the screen
+
+![The Anchor Preset dropdown open with Full Rect highlighted](images/01-anchor-preset.png)
+<!-- SCREENSHOT: Select the Game node, open the anchor preset dropdown in the 2D viewport toolbar. Arrow pointing at Full Rect. -->
 
 Your `Game` node is currently a tiny box in the corner. With `Game` selected,
 look at the toolbar above the viewport for a dropdown that appears when a
@@ -71,6 +80,9 @@ it if the player resizes the window.
 
 ## Add a background
 
+![The Scene panel showing Game with a Background child](images/01-scene-tree.png)
+<!-- SCREENSHOT: Crop to the Scene dock. Game (Control) with Background (ColorRect) indented beneath it. -->
+
 Right-click the `Game` node → **Add Child Node** → search `ColorRect` → Create.
 
 Rename it to `Background`, set its anchor preset to **Full Rect** as well, and
@@ -88,6 +100,9 @@ That indentation *is* the tree. `Background` is a **child** of `Game`. Children
 are drawn on top of their parent, and they move with it.
 
 ## Save and run
+
+![The running game window filled with the dark background colour](images/01-running-empty.png)
+<!-- SCREENSHOT: F5 output - just the plain dark window. Small crop is fine. -->
 
 Press ++ctrl+s++ (++cmd+s++ on Mac) and save the scene as `main.tscn` in the
 project root.

@@ -15,6 +15,9 @@ That is three requirements, and they map straight onto three nodes.
 
 ## Start a new scene
 
+![The Create New Node dialog with Button searched and selected](images/02-button-root.png)
+<!-- SCREENSHOT: Scene > New Scene > Other Node, type 'Button' in the search box. -->
+
 **Scene → New Scene** from the menu. Then click **Other Node** and search for
 `Button`.
 
@@ -30,6 +33,9 @@ In the **Inspector**, find **Custom Minimum Size** and set it to `150` × `140`.
 This is how big each card will be.
 
 ## Add the front
+
+![The Scene panel showing Card with Face, Picture, Word and Back](images/02-card-tree.png)
+<!-- SCREENSHOT: Crop to the Scene dock with all five nodes visible and correctly indented. -->
 
 Right-click `Card` → **Add Child Node** → `VBoxContainer`. Name it `Face`.
 
@@ -48,6 +54,9 @@ Now give `Face` two children:
 
 ### One easy thing to get wrong
 
+![The Inspector showing Mouse Filter set to Ignore](images/02-mouse-filter.png)
+<!-- SCREENSHOT: Select the Face node, scroll the Inspector to Mouse > Filter. Highlight the Ignore value. -->
+
 Select `Face`, `Picture` and `Word` in turn and set **Mouse → Filter** to
 **Ignore** for each.
 
@@ -65,6 +74,9 @@ Set its anchor preset to **Full Rect** and its **Mouse → Filter** to **Ignore*
 So `Back` covers `Face` completely — which is exactly what a face-down card is.
 
 ### Make the back opaque
+
+![The Inspector showing a StyleBoxFlat with a blue background colour](images/02-stylebox.png)
+<!-- SCREENSHOT: Select Back, expand Theme Overrides > Styles > Panel > StyleBoxFlat. Show BG Color and Corner Radius. -->
 
 Here is a trap. Godot's default `Panel` style is slightly see-through. If you
 run the game now, the words underneath would show through faintly — and a
@@ -87,6 +99,9 @@ white background and corner radius `10`.
     transparent.
 
 ## Save it
+
+![The card shown face up and face down side by side](images/02-card-front-back.png)
+<!-- SCREENSHOT: Two crops of the 2D viewport joined: Back hidden (white front) and Back visible (solid blue). -->
 
 Save as `scenes/card.tscn`. Godot will offer to create the `scenes` folder.
 

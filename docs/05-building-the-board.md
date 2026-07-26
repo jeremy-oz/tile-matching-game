@@ -24,6 +24,9 @@ Two lines. That is instancing.
 
 ## Add the board to the main scene
 
+![The Scene panel showing the full main scene layout](images/05-layout-tree.png)
+<!-- SCREENSHOT: Scene dock: Game > Background, Margin > Columns > BoardArea > Board, and SidePanel with its four children. -->
+
 Open `main.tscn`. You will build a small layout so the board sits nicely next to
 a score panel.
 
@@ -56,6 +59,9 @@ Set the font size of `ScoreLabel` and `TurnsLabel` to `36` so they are readable.
 
 ### Unique names
 
+![The right-click menu showing Access as Unique Name, and the % marker on the node](images/05-unique-name.png)
+<!-- SCREENSHOT: Right-click Board in the Scene dock. Second shot or same frame showing the % badge after applying. -->
+
 Select `Board` and, in the Scene panel, right-click it → **Access as Unique
 Name**. A `%` appears next to it. Do the same for `ScoreLabel`, `TurnsLabel`,
 `MessageLabel` and `RestartButton`.
@@ -66,6 +72,9 @@ layout, `%Board` keeps working. Long node paths are one of the most common
 sources of breakage in Godot projects, and this avoids them.
 
 ## The board script
+
+![The Inspector showing the exported Card Scene slot with card.tscn assigned](images/05-card-scene-slot.png)
+<!-- SCREENSHOT: Select Board. Show the Card Scene property with card.tscn in it, ideally mid-drag from the FileSystem dock. -->
 
 Attach a script to the `Board` node at `res://scripts/board.gd`, template
 **Empty**.
